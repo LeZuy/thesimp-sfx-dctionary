@@ -9,7 +9,7 @@ function App() {
   const [mode, setMode] = useState("katakana");
   const insertChar = (char) => setQuery(query + char);
   const search = async () => {
-    const res = await axios.get(`http://localhost:5000/search?q=${query}`);
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/search?q=${query}`);
       setResults(res.data);
       console.log("Tìm kiếm: ", query);
       console.log(`Tìm thấy ${res.data.length} kết quả.`);
