@@ -1,5 +1,9 @@
 # Frontend
 sfx-frontend/node_modules/
+sfx-frontend/.env
+sfx-frontend/src/reportWebVitals.js
+sfx-frontend/src/setupTests.js
+sfx-frontend/src/App.test.js
 
 # Backend
 sfx-backend/node_modules/

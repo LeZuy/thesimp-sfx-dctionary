@@ -10,7 +10,7 @@ app.use(cors());
 
 let sfxData = [];
 
-fs.createReadStream("./data/sfx_jaded_full.csv")
+fs.createReadStream("./data/sfx_jaded_full.csv", "utf8")
     .pipe(csv())
     .on("data", (row) => sfxData.push(row))
     .on("end", () => {
